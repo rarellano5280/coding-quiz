@@ -29,9 +29,40 @@
                 <p style="display:none">Time: <span id="countdownTag">9999</span></p>
             </div>
         </header>
+        <main>
+            <!--Introduction page-->
+            <h1 id = "intro-page-title">Coding Quiz Challenge</h1>
+            <p id="intro-page-subtitle">Do your best to answer the following questions within the alloted time! Be careful... a wrong answer will decrease your time by TEN seconds!</p>
+            <button id="startBtn">Start Quiz</button> <!--Button to start quiz/needs event listener-->
+            <ul>
+                <!--Insert questions and answers through JS-->
+            </ul>
+            <!--Submit High Scores-->
+            <section class="submit-page" id="submit-page">
+                <h1>DONE!</h1>
+                <P>Your final score is <span id="scoreSpan">999</span>.</P>
+                <div id="highscore-input">
+                    <p>Enter initials:
+                        <input id="initial">
+                        <button class="button" id="submitHighscoreBtn">Submit</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Display High Scores-->
+        <section class="highscore-page" id="highscore-page">
+            <h1>Highscores</h1>
+            <ol>
 
+            </ol>
+            <button id="backBtn">Back</button>
+            <button id="clearHighscore">Clear High Scores</button>
+        </section>
+        </main>
+        <footer>
+            <p>Made by Robert Arellano </p>
+        </footer>
+    </div> <!--end of theme div-->
 
-
-    </div>
 </body>
 </html>
