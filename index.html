@@ -4,60 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Coding Quiz</title>
 </head>
 <body>
-    <div class="container-light">
         <header>
             <!--High Scores button/left side-->
-            <button id="highscoresBtn">High Scores</button> 
-            <!--Toggle theme switch/left side-->
-            <div class="row-toggle">
-                <div class="side-col">
-                    <p>Light Mode</p>
-                </div>
-                <label class="switch-col">
-                <input type="checkbox" id="theme-switcher">
-                <span class="slider"></span>
-             </label>
-             <div class="side-col">
-                <p>Zombie Mode</p>
-             </div>
-            </div>
+            <button id="highscoresBtn"><span>High Scores</span></button> 
+           
             <!--Timer/Right side -->
-            <div class="timer">
                 <p style="display:none">Time: <span id="countdownTag">9999</span></p>
-            </div>
         </header>
         <main>
             <!--Introduction page-->
             <h1 id = "intro-page-title">Coding Quiz Challenge</h1>
             <p id="intro-page-subtitle">Do your best to answer the following questions within the alloted time! Be careful... a wrong answer will decrease your time by TEN seconds!</p>
-            <button id="startBtn">Start Quiz</button> <!--Button to start quiz/needs event listener-->
+            <button id="startBtn"><span>Start Quiz</span></button> <!--Button to start quiz/needs event listener-->
             <ul>
                 <!--Insert questions and answers through JS-->
             </ul>
             <!--Submit High Scores-->
-            <section class="submit-page" id="submit-page">
+            <div class="submit-page">
                 <h1>DONE!</h1>
                 <P>Your final score is <span id="scoreSpan">999</span>.</P>
                 <div id="highscore-input">
                     <p>Enter initials:
                         <input id="initial">
-                        <button class="button" id="submitHighscoreBtn">Submit</button>
+                        <button class="button" id="submitHighscoreBtn"><span>Submit</span></button>
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
         <!--Display High Scores-->
-        <section class="highscore-page" id="highscore-page">
+        <div id="highscore-page">
             <h1>Highscores</h1>
             <ol>
 
             </ol>
-            <button id="backBtn">Back</button>
-            <button id="clearHighscore">Clear High Scores</button>
-        </section>
+            <button id="backBtn"><span>Back</span></button>
+            <button id="clearHighscore"><span>Clear</span></button>
+        </div>
         </main>
         <footer>
             <p>Made by Robert Arellano </p>

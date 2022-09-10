@@ -1,0 +1,122 @@
+/* Root colors for my website*/
+:root{
+    --primaryBackground: #36393f;
+    --btnBackground: #1277DD;
+}
+
+::selection {
+  }
+
+body{
+    position: relative;
+    margin: 0.5rem;
+    min-height: 100vh;
+    background-color: var(--primaryBackground);
+    color: white;
+}
+
+header{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+ 
+#highscore-page > button,
+#highscoore-input > button,
+#submitHighscoreBtn,
+header button {
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    background: #0047ab;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+#highscore-page span,
+#highscoore-input span,
+#submitHighscoreBtn span,
+#submitHighscoreBtn span,
+#startBtn span,
+header button span{
+    position: relative; 
+    z-index: 1;
+}
+
+#highscore-page button::after,
+#highscore-input button::after,
+#highscoresBtn::after,
+#startBtn::after,
+header button::after{
+    content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: var(--btnBackground);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(48deg);
+}
+
+#highscore-page button:hover:after,
+#highscore-input button:hover:after,
+#highscoresBtn:hover:after,
+#startBtn:hover:after{
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 15vh 5vh 15vh;
+}
+
+main h1{
+    margin: 3vh;
+    font-size: 200%;
+    text-align: center;
+}
+
+main > div, 
+#intro-page-subtitle {
+    padding: 0 15% 0 15%;
+    text-align: center;
+    font-size: 125%;
+}
+
+#startBtn {
+width: 150px;
+height: 40px;
+background-color: #0047ab;
+color: white;
+font-size: 100%;
+border-radius: 15px;
+border: none;
+text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+outline: none;
+overflow: hidden;
+position: relative;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+
+
+
