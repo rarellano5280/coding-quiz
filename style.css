@@ -1,11 +1,9 @@
 /* Root colors for my website*/
 :root{
     --primaryBackground: #36393f;
-    --btnBackground: #1277DD;
+    --btnBackground: #0047ab;
+    --secondaryBackground: #1277DD;
 }
-
-::selection {
-  }
 
 body{
     position: relative;
@@ -38,7 +36,7 @@ header button {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
-    background: #0047ab;
+    background: var(--btnBackground);
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
 }
 
@@ -63,7 +61,7 @@ header button::after{
   top: 0;
   height: 490%;
   width: 140%;
-  background: var(--btnBackground);
+  background: var(--secondaryBackground);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -102,7 +100,7 @@ main > div,
 #startBtn {
 width: 150px;
 height: 40px;
-background-color: #0047ab;
+background-color: var(--btnBackground);
 color: white;
 font-size: 100%;
 border-radius: 15px;
@@ -115,6 +113,51 @@ overflow: hidden;
 position: relative;
 font-weight: 500;
 box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+main > ul {
+    align-items: flex-start;
+    margin: left;
+}
+
+main > ul li{
+    margin: 3vh;
+    width: max-content;
+    min-width: 10vh;
+    padding-inline-start: 5px 10px 5px 10px;
+    background-color: var(--btnBackground);
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 150%;
+}
+
+main > div{
+    justify-content: flex-start;
+}
+
+footer{
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    left: 150px;
+}
+
+#highscore-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscore-input > p{
+    display: inline;
+}
+
+#highscore-input{
+    width: 30%;
 }
 
 
