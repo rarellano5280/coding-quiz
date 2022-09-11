@@ -128,12 +128,17 @@ main > ul li{
     background-color: var(--btnBackground);
     color: white;
     border: 0;
-    border-radius: 15px;
-    font-size: 150%;
+    border-radius: 5px;
+    font-size: 125%;
+    cursor: pointer;
+}
+main > ul li:hover{
+background-color: var(--secondaryBackground);
 }
 
 main > div{
     justify-content: flex-start;
+    display: none;
 }
 
 footer{
@@ -154,10 +159,15 @@ footer{
 
 #highscore-input > p{
     display: inline;
+    justify-content: center;
 }
 
 #highscore-input{
     width: 30%;
+}
+
+#header > p{
+    color: white;
 }
 
 

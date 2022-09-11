@@ -11,20 +11,18 @@
         <header>
             <!--High Scores button/left side-->
             <button id="highscoresBtn"><span>High Scores</span></button> 
-           
-            <!--Timer/Right side -->
-                <p style="display:none">Time: <span id="countdownTag">9999</span></p>
+            <p style="display: none;">Time: <span id="countdownTag">9999</span></p>
         </header>
         <main>
             <!--Introduction page-->
-            <h1 id = "intro-page-title">Coding Quiz Challenge</h1>
+            <h1 id ="intro-page-title">Coding Quiz Challenge</h1>
             <p id="intro-page-subtitle">Do your best to answer the following questions within the alloted time! Be careful... a wrong answer will decrease your time by TEN seconds!</p>
             <button id="startBtn"><span>Start Quiz</span></button> <!--Button to start quiz/needs event listener-->
             <ul>
                 <!--Insert questions and answers through JS-->
             </ul>
             <!--Submit High Scores-->
-            <div class="submit-page">
+            <div id="submit-page">
                 <h1>DONE!</h1>
                 <P>Your final score is <span id="scoreSpan">999</span>.</P>
                 <div id="highscore-input">
@@ -48,7 +46,6 @@
         <footer>
             <p>     Made by Robert Arellano 2022</p>
         </footer>
-    </div> <!--end of theme div-->
-
+        <script src="./script.js"></script>
 </body>
 </html>
