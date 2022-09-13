@@ -8,7 +8,7 @@ var clearHS = document.querySelector('#clearHighscore')
 var backHS = document.querySelector('#backBtn')
 var answerList = document.querySelector('ul');
 
-
+//QUESTIONS that will populate in the ul 
 var questionsObj = {
     questions: [
         `JavaScript is an ____ language?`, 
@@ -33,6 +33,7 @@ var timeRemain = globalTimerPreset;
 var score = 0;
 var endGame = true;
 
+//Screen that will populate at start of game
 function initGame() {
     timeRemain = globalTimerPreset;
     cDown.textContent = globalTimerPreset
@@ -50,7 +51,7 @@ function initGame() {
     
     return;
 }
-
+//Countdown timer starts once the start button is pressed 
 function startGame() {
     gameEnded = false;
     questionIndexNumber = 0;
@@ -142,7 +143,7 @@ function trueAnswer(event) {
 
     return;
 }
-
+// need to figure out why highscores are not being stored to local storage
 function scoreAndName() {
     var scoreInputBox = document.querySelector('input');
     var tempArrayOfObjects = [];
@@ -196,7 +197,7 @@ function displayHighscores(){
     if (tempArrayOfObjects != null) {
         for ( i = 0; i < tempArrayOfObjects; i++) {
             var newLi = document.createElement('li')
-            newLi.textContent = tempArrayOfObjects[i].names + ' - ' + tempArrayOfObjects[i].scores;
+            newLi.textContent = tempArrayOfObjects[i].initials + ' - ' + tempArrayOfObjects[i].scores;
             tempOl.appendChild(newLi);
         }
 
@@ -216,12 +217,11 @@ function begin() {
     viewHS.addEventListener('click' , displayHighscores);
     submitHS.addEventListener('click' , scoreAndName);
     clearHS.addEventListener('click' , clearHighscores);
-    backHS,addEventListener('click' , setUpGame);
+    backHS,addEventListener('click' , initGame);
 
-    setUpGame();
+    initGame();
 
     return;
 
 }
-
  begin();
